@@ -1,0 +1,79 @@
+
+
+	<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport"
+			content="width=device-width,
+			initial-scale=1.0">
+			<title>Selectores personalizados(id, class,Pseudoclasses e pseudoelementos)</title>
+			
+			<style>
+				div{
+					display:block;
+					background-color:lightgray;
+					border:1px solid black;
+					text-align:center;
+					width:200px;
+					height:100px;
+				}
+				div:hover{
+					background-color:darkgray;
+					
+				}
+				div:active{
+					background-color:white;
+				}
+				div:empty{
+					background-color:red;
+				}
+				div p{
+					display:none;
+				}
+				div:hover p{
+					display:block;
+				}
+				a{
+					display:block;
+					
+				}
+				a:visited{
+					color:rgba(0,0,80,0.99);
+				}
+				a:hover::before{
+					content:"[link] ";
+					color:rgba(0,0,150,0.99);
+					
+				}
+			::selection{
+				color:mediumblue;
+				background-color:rgb(30,30,30);
+			}
+			li::marker{
+				color:blue;
+				font-size:20px;
+			}
+			</style>
+
+		</head>
+		<body>
+			<h1>Pseudoclasses</h1>
+			
+			<div>
+				<p>Ola como está</p>
+			</div>
+			<div>2</div>
+			<div>3</div>
+			<ul>
+			<h1>Pseudoelementos junto com pseudoclasses</h1>	
+				<li><a rel="external" href="https://chat.deepseek.com/" target="_blank">Deepseesk</a>
+				<li><a rel="external" href="https://chatgpt.com/" target="_blank">Chatgpt</a>
+				<li><a rel="external" href="https://color.adobe.com/create/color-wheel" target="_blank">Adobe color</a>
+			</ul>
+			
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies ultricies, nunc nisl aliquam nunc, quis aliquam nisl nunc eu nisl. Nullam euismod, nisl eget ultricies ultricies, nunc nisl aliquam nunc, quis aliquam nisl nunc eu nisl. Nullam euismod, nisl eget ultricies ultricies, nunc nisl aliquam nunc, quis aliquam nisl nunc eu nisl. Nullam euismod, nisl eget ultricies ultricies, nunc nisl aliquam nunc, quis aliquam nisl nunc eu nisl. Nullam euismod, nisl eget ultricies ultricies, nunc nisl aliquam nunc, quis aliquam nisl nunc eu nisl.</p>					
+			
+			
+		</body>
+	</html>

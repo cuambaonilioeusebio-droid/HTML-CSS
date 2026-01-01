@@ -1,0 +1,32 @@
+
+
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport"
+			content="width=device-width
+			initial-scale=1.0">
+			<link rel="shortcut icon" href="C:\Meus ficheiros.CBM\Curso de html e css\HTML-CSS\exercicios\ex004\icon\blogtk-icon.png" type="image/x-icon">
+			<title>Inserindo videos</title>
+		</head>
+		<body>
+			<h1>Inserindo videos hospedados localmente</h1>
+			<h2>Hospedando normalmente sem os sources</h2>
+			<video controls preload="metadata" width=400px height=400px src="video\video.mp4" ></video>
+			
+			<h2>Hospedando com os sources</h2>
+			<video preload="metadata" controls width=400px height=400px>
+				<source src="video\video.mp4" type="video/mp4">
+				<source src="video\video.webm" type="video/webm">
+				<source src="video\video.ogv" type="video/ogv">
+				<p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+			</video>
+			
+			<h2>Inserindo videos do youtube</h2>
+			<iframe width="400" height="400" src="https://www.youtube.com/embed/nCKwUB8EVbc?si=vjDGpkNtrNSFtBSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+		</body>
+	</html>

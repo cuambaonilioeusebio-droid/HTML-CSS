@@ -1,0 +1,36 @@
+
+
+
+	<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport"
+			content="width=device-width,
+			initial-scale=1.0">
+			<link rel="shortcut icon" href="C:\Meus ficheiros.CBM\Curso de html e css\HTML-CSS\exercicios\ex004\icon\blogtk-icon.png" type="image/x-icon">
+			<title>Imagens dinamicas e audios</title>
+		</head>
+		<body>
+			<h1>Imagens dinámicas</h1>
+			<p>Tente abir em dispositivos diferentes ou simpliesmente diminua ou aumente o tamanho do seu navegador</p>
+			
+			<picture>
+				<source media="(max-width: 700px)" srcset="imagens\foto-p.png" type="image/png">
+				<source media="(max-width: 1000px)" srcset="imagens\foto-m.png" type="image/png">
+				<img src="imagens\foto-g.png" alt="Imagem grande">
+			</picture>
+			
+			<h1>Reproduzindo audios</h1>
+			<h2>Audio simples sem sources</h2>
+			<audio src="audios\audio.mp3" controls preload="metadata"></audio>
+			
+			<h2>Audio com sources</h2>
+			<audio preload="metada" controls loop>
+				<source src="audios\audio.mp3" type="audio/mpeg">
+				<source src="audios\audio.ogg" type="audio/ogg">
+				<source src="audios\audio.wav" type="audio/wav">
+			</audio>
+	
+		</body>
+	</html>
