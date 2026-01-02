@@ -26,7 +26,7 @@
 	/*1.Estilização do header*/
 	header{
 		max-width:100vw;		
-		min-width:400px;
+		min-width:300px;
 		width:100%;
 		/*height: calc(256px - 3vw);*/
 		height:250px;
