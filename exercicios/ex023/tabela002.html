@@ -11,6 +11,19 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+            
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+        }
+        caption{
+            margin-bottom: 0px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+            background-color: rgb(199, 196, 196);
         }
         td,th{
             border: 1px solid black;
@@ -19,15 +32,19 @@
         th{
             background-color: rgb(71, 69, 69);
         }
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
-    <h1>Uso de tabels grandes</h1>
+    <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -43,13 +60,64 @@
                 <td>Rio de Janeiro</td>
                 <td>17 264 791</td>
             </tr>
+            <tr>
+                <td>Maputo</td>
+                <td>14 004 00</td>
+            </tr>
+            <tr>
+                <td>Inhambane</td>
+                <td>12 003 00</td>
+            </tr>
+            <tr>
+                <td>Gaza</td>
+                <td>12 103 00</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td>11 003 00</td>
+            </tr>
+            <tr>
+                <td>Manica</td>
+                <td>15 003 00</td>
+            </tr>
+            <tr>
+                <td>Teté</td>
+                <td>12 003 001</td>
+            </tr>
+            <tr>
+                <td>Nampula</td>
+                <td>10 003 00</td>
+            </tr>
+            <tr>
+                <td>Cabo Delgado</td>
+                <td>20 003 010</td>
+            </tr>
+            <tr>
+                <td>Niassa</td>
+                <td>30 003 000</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row" >Total de habitantes</th>
                 <td><strong>1 000 000 000 000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti nulla libero eos, rem fugit animi distinctio magnam sunt, earum exercitationem! Illum vero quis est officiis accusantium maxime? Exercitationem, sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas velit sed recusandae, laboriosam vel aliquam fuga impedit. Eligendi voluptas aspernatur nostrum reprehenderit veritatis modi optio, officia distinctio quasi ipsum harum!Loremlo
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste debitis, quidem magni id maxime quam, ut corporis officiis placeat at quo rerum, ipsam dolore fuga magnam nulla molestias sapiente.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti nulla libero eos, rem fugit animi distinctio magnam sunt, earum exercitationem! Illum vero quis est officiis accusantium maxime? Exercitationem, sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas velit sed recusandae, laboriosam vel aliquam fuga impedit. Eligendi voluptas aspernatur nostrum reprehenderit veritatis modi optio, officia distinctio quasi ipsum harum!Loremlo
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste debitis, quidem magni id maxime quam, ut corporis officiis placeat at quo rerum, ipsam dolore fuga magnam nulla molestias sapiente.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti nulla libero eos, rem fugit animi distinctio magnam sunt, earum exercitationem! Illum vero quis est officiis accusantium maxime? Exercitationem, sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas velit sed recusandae, laboriosam vel aliquam fuga impedit. Eligendi voluptas aspernatur nostrum reprehenderit veritatis modi optio, officia distinctio quasi ipsum harum!Loremlo
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste debitis, quidem magni id maxime quam, ut corporis officiis placeat at quo rerum, ipsam dolore fuga magnam nulla molestias sapiente.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti nulla libero eos, rem fugit animi distinctio magnam sunt, earum exercitationem! Illum vero quis est officiis accusantium maxime? Exercitationem, sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas velit sed recusandae, laboriosam vel aliquam fuga impedit. Eligendi voluptas aspernatur nostrum reprehenderit veritatis modi optio, officia distinctio quasi ipsum harum!Loremlo
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste debitis, quidem magni id maxime quam, ut corporis officiis placeat at quo rerum, ipsam dolore fuga magnam nulla molestias sapiente.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corrupti nulla libero eos, rem fugit animi distinctio magnam sunt, earum exercitationem! Illum vero quis est officiis accusantium maxime? Exercitationem, sequi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas velit sed recusandae, laboriosam vel aliquam fuga impedit. Eligendi voluptas aspernatur nostrum reprehenderit veritatis modi optio, officia distinctio quasi ipsum harum!Loremlo
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste debitis, quidem magni id maxime quam, ut corporis officiis placeat at quo rerum, ipsam dolore fuga magnam nulla molestias sapiente.
+    </p>
 </body>
 </html>
