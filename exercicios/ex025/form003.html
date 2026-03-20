@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body style="background-color: rgb(67, 67, 75);">
+    <h1>Elementos number, month,date e time</h1>
+    <form action="" autocomplete="on">
+        <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+        </div>
+        <div>
+            <label for="imedia">Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="20" step="0.1" >
+        </div>
+        <div>
+            <label for="ipl">Periodo lectivo</label>
+            <input type="month" name="pl" id="ipl" value="2026-03" min="2026-03" step="2" required >
+        </div>
+        <div>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia" min="2026-03-19" step="2" value="2026-03-19">
+        </div>
+        <div>
+            <label for="ihorario">Horario da prova</label>
+            <input type="time" name="horario" id="ihorario" min="11:00" step="2" value="11:12:54">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
