@@ -7,13 +7,15 @@
 </head>
 <body>
     <!--
-        1.Tag form e seus paramentros;
+        1.Tag form e seus paramentros:
             *action:nome do arquivo php;
             *method:Post,get.cookie e etc;
             *autocomplete:on ou off.
-        2.Tag label e seus parametros:
+        2.Tag fieldset;
+            I.Tag legend utilizada para a legenda do fieldset;
+        3.Tag label e seus parametros:
             *for:nome do id do respectivo camp.
-        3.Tag input do type text com seus paramentros;
+        4.Tag input do type text com seus paramentros:
             *type:text;
             *id;
             *name;
@@ -22,15 +24,26 @@
             *maxlength:numeros inteiros;
             *size:numeros inteiros;
             *placeholder:sugestao do que prencher no campo;
-            *autocomplete
+            *autocomplete:name,username,nickname;
             *value:valor de iniciação 
-        4.Tag input do type submit com os seus parametros;
+        5.Tag input do type password com os seus parametros:
+            *type:password;
+            *id;
+            *name;
+            *required;
+            *minlength:numeros inteiros;
+            *maxlength:numeros inteiros;
+            *size:numeros inteiros;
+            *placeholder:sugestao do que prencher no campo;
+            *autocomplete:current-password,new-password;
+            *value:valor de iniciação 
+        6.Tag input do type submit com os seus parametros:
             *type:submit;
             *value:Valor/legenda do butao;
-        5.Tag input do type reset com os seus parametros;    
+        7.Tag input do type reset com os seus parametros:  
             *type:reset;
             *value:Valor/legenda do butao;
-        6.Tag input do type number:
+        8.Tag input do type number:
             *type:number;
             *id;
             *name;
@@ -39,33 +52,108 @@
             *max:numero inteiro;     
             *step:numero inteiro;
             *value:valor de iniciação 
-        7.Tag input do type month:
+        9.Tag input do type month:
             *type:month;
             *id;
             *name;
             *required;  
-            *min:numero inteiro;  
-            *max:numero inteiro;  
+            *min:YYYY-MM;  
+            *max:YYYY-MM;  
             *step:numero inteiro;
-            *value:valor de iniciação  
-        8.Tag input do type date:
+            *value:valor de iniciação YYYY-MM  
+        10.Tag input do type date:
             *type:date;
             *id;
             *name;
             *required;  
-            *min:numero inteiro;  
-            *max:numero inteiro;  
+            *min:YYYY-MM-DD;  
+            *max:YYYY-MM-DD;  
             *step:numero inteiro;
-            *value:valor de iniciação 
-        9.Tag input do type time:
-            *type:date;
+            *value:valor de iniciação YYYY-MM-DD
+        11.Tag input do type time:
+            *type:time;
             *id;
             *name;
             *required;  
-            *min:numero inteiro;  
-            *max:numero inteiro;  
+            *min:HH:MM;  
+            *max:HH:MM;  
             *step:numero inteiro;
+            *value:valor de iniciação HH:MM
+        12.Tag input do type email:
+            *type:email;
+            *id;
+            *name;
+            *required;  
+            *minlength:numeros inteiros;
+            *maxlength:numeros inteiros;
+            *size:numeros inteiros;
+            *placeholder:sugestao do que prencher no campo;
+            *autocomplete:email,username;
             *value:valor de iniciação 
+        13.Tag input do type tel:
+            *type:tel;
+            *id;
+            *name;
+            *required;  
+            *minlength:numeros inteiros;
+            *maxlength:numeros inteiros;
+            *size:numeros inteiros;
+            *placeholder:sugestao do que prencher no campo;
+            *value:valor de iniciação 
+            *autocomplete:tel,tel-national,tel-country-code,tel-area-code,tel-local;
+        14.Tag input do type radio:
+            *type:radio;
+            *id;
+            *name;
+            *required;
+            *checked;
+        15.Tag input do type checkbox:
+            *type:checkbox;
+            *id;
+            *name;
+            *required;
+            *checked;
+        16.Tag input do type color:
+            *type:color;
+            *id;
+            *name;
+            *required;
+            *value;
+        17.Tag input do type range:
+            *type:range;
+            *id;
+            *name;
+            *required;
+            *value;
+        18.Tag input do type file:
+            *type:file;
+            *id;
+            *name;
+            *required;
+            *value;
+        19.Tag select:
+            *id;
+            *name;
+            *required;
+            I.Tag optgroup utilizada dentro do select:
+                *label:texto de identificação;
+            II.Tag option utilizada dentro de select/datalist (opcionalmente dentro do optgroup):
+                *value;
+        20.Tag datalist utilizada com a Tag input do type text com a propriedade list="id da tag"
+            *id;
+            I.Tag option utilizada dentro de select/datalist (opcionalmente dentro do optgroup):
+                *value;
+        21.Tag textarea:
+            *id;
+            *name;
+            *cols;
+            *rows;
+            *required;  
+            *minlength:numeros inteiros;
+            *maxlength:numeros inteiros;
+            *placeholder:sugestao do que prencher no campo;
+        22.Tag output:
+            *id;
     -->
     <h1>Meu primeiro formulário</h1>
     <form action="cadstro.php" method="GET">

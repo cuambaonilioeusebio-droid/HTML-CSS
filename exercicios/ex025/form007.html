@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select,datalist, e textarea</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="Cadastro.php" method="GET">
+        <div>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado" >
+                <option value="" Selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG" >Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="dprof" required>
+            <datalist id="dprof" >
+                <option value="Medico"></option>
+                <option value="Enfermeiro"></option>
+                <option value="Administrador"></option>
+                <option value="Contabilidade"></option>
+            </datalist>
+        </div>
+        <div>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem" maxlength=5 required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

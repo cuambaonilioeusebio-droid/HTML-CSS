@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento output</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="">
+        <fieldset>
+            <legend>Soma entre numeros</legend>
+            <div>
+                <label for="inum1">Numero 1</label>
+                <input type="number" name="num1" id="inum1" oninput=soma.innerHTML=Number(inum1.value)+Number(inum2.value)>
+            </div>
+            <div>
+                <label for="inum2">Numero 2</label>
+                <input type="number" name="num2" id="inum2" oninput=soma.innerHTML=Number(inum1.value)+Number(inum2.value)>
+            </div>
+            <div>
+                <label for="soma">Soma</label>
+                <output id="soma">0</output>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Range</legend>
+            <div>
+                <label for="inum">Numero</label>
+                <input type="range" name="num" id="inum" oninput=result.innerHTML=Number(inum.value)>
+                <output id="result">50</output>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Calculo de idade</legend>
+            <div>
+                <label for="iano">Em que ano nasceu</label>
+                <input type="number" name="ano" id="iano" oninput="calcularidade()">
+            </div>
+            <div>
+                <label for="idade">Sua idade é:</label>
+                <output id="idade"></output>
+            </div>
+        </fieldset>
+        <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+    </form>
+    <script>
+        function calcularidade(){
+            actual = new Date().getFullYear();
+            idade.innerHTML = Number(actual)-iano.value;
+        }
+    </script>
+</body>
+</html>

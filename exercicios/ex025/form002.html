@@ -7,14 +7,14 @@
 </head>
 <body>
     <h1>Formulário com caixas de texto e de senha</h1>
-    <form action="">
+    <form action="" autocomplete="on">
         <div>
             <label for="iusuario">Usuario</label>
-            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="30" size="10" placeholder="Seu usuario" autocomplete="username">
+            <input type="text" name="usuario" id="iusuario" minlength="5" maxlength="30" size="10" placeholder="Seu usuario" autocomplete="username">
         </div>
         <div>
             <label for="isenha">Senha</label>
-            <input type="text" name="senha" id="isenha" required>
+            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="7" size="10" placeholder="Insira a senha" autocomplete="current-password" value="12345">
         </div>
         <div>
             <input type="submit" value="Enviar">
