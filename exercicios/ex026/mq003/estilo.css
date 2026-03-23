@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media all{
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+    }
+    h1{
+        padding: 5px;
+        color: white;
+        text-shadow: 1px 2px 3px #0e1d94;
+    }
+}
+
+/*Configurações para o modo retrato*/
+@media screen and (orientation:portrait){
+    body{
+        background-image: url(imagens/cev-portrait.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+}
+
+/*Configurações para o modo paisagem*/
+@media screen and (orientation:landscape){
+    body{
+        background-image: url(imagens/cev-landscape.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left bottom;
+    }
+}
+/*Anotar sobre mobile first*/

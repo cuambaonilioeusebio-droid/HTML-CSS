@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header #titulo{
+    background-color: rgba(190, 183, 183, 0.603);
+    text-align: center;
+}
+menu{
+    background-color: rgb(128, 128, 128);
+}
+ul{
+    list-style-type: none;
+}
+header>menu>ul>li{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    padding: 4px;
+}
+article.conteudo{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
