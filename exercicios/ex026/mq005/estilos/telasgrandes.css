@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#menu{
+    display: none;
+}
+menu#itens{
+    display: block;
+}
+header>menu>ul>li{
+    
+    text-align: center;
+    text-decoration-line: none;
+    display: inline-block;
+}
+header>menu>ul>li>a{
+    margin-left: 1px;
+    padding: 4px 6px;
+}
+main{
+    width: 680px;
+}
