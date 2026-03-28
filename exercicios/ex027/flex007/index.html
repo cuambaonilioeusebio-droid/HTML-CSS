@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de itens empacotados</title>
+    <style>
+        main{
+            height: 100px;
+            display: flex;
+            background-color: black;
+            padding: 2px;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+        .item{
+            padding: 1px 3px;
+            margin: 2px 4px;
+            background-color: white;
+        }
+        #item1{
+            order: 6;
+        }
+        #item2{
+            order: 4;
+        }
+        #item3{
+            order: 8;
+        }
+        #item4{
+            order: 7;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="item1" class="item">Exemplo caixa A</div>
+        <div id="item2" class="item">Exemplo caixa B</div>
+        <div id="item3" class="item">Exemplo caixa C</div>
+        <div id="item4" class="item">Exemplo caixa D</div>
+        <div id="item5" class="item">Exemplo caixa E</div>
+        <div id="item6" class="item">Exemplo caixa F</div>
+        <div id="item7" class="item">Exemplo caixa G</div>
+        <div id="item8" class="item">Exemplo caixa H</div>
+    </main>
+</body>
+</html>
