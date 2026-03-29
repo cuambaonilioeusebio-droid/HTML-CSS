@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade flex-basis</title>
+    <style>
+        main{
+           display: flex;
+            background-color: black;
+            padding: 2px;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+        .item{
+            padding: 1px 3px;
+            margin: 2px 4px;
+            background-color: white;
+            flex-basis: 250px;
+        }
+        #item1{
+            flex-grow: 1;
+        }
+        #item2{
+            flex-grow: 1;
+        }
+        #item3{
+            flex-shrink: 1;
+        }
+        #item4{
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="item1" class="item">Exemplo A</div>
+        <div id="item2" class="item">Exemplo B</div>
+        <div id="item3" class="item">Exemplo C</div>
+        <div id="item4" class="item">Exemplo D</div>
+    </main>
+</body>
+</html>

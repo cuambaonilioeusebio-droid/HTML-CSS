@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+header{
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+}
+nav{
+    width: 95%;
+    flex-flow: column nowrap;
+}
+nav>a{
+    width: 100%;
+    text-align: center;
+}
